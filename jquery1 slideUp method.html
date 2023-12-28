@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#a").click(function(){
+                $("#b").slideUp("slow");
+            });
+        });
+    </script>
+    
+    <style>
+        #a, #b {
+            padding: 5px;
+            text-align: center;
+            background-color: aqua;
+            border: solid 1px black;
+        }
+    
+        #b{
+            padding: 50px;
+        }
+    </style>
+    
+    <div id="a">Click to slide up</div>
+    <div id="b">Hello World!</div>
+    
+</body>
+</html>

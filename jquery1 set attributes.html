@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                 $("#test").attr("href","https://www.w3schools.com/jquery/");
+            });
+        });
+    </script>
+    <p><a href="https://www.w3schools.com" id="test">w3schools.com</a></p>
+    <button>Change href Value</button>
+    
+</body>
+</html>
